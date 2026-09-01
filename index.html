@@ -1,67 +1,299 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="gallery.theme.css">
-    <link rel="stylesheet" href="gallery.min.css">
-    <title>Meu Carango</title>
-</head>
-<body class="meucarango">
-    <header>
-        <a href="index.html" class="logo"> Meu Carango</a>
-        <nav class="nav">
-            <a href="index.html"class="active">Home</a>
-            <a href="carros.html">Carros</a>
-            <a href="fabricantes.html">Fabricantes</a>
-			<a href="agencias.html">Agências</a>
-            <a href="contato.html">Contato</a>
-        </nav>
-    </header>
-	<table class="carros">
-	    <tr align="center">
-		    <th>
-		        <a href="carros.html">
-		        <img alt="ERROR" src="Imagens/Duster.png" width="280" height="160">
-		    </a>
-	    	</th>
-			<td> <strong> Duster <br>RENAULT DUSTER<br> Motor 1.6L </strong></td>
-		</tr>
-		<tr align="center">
-		    <th>
-		        <a href="carros.html">
-		        <img alt="ERROR" src="Imagens/Territory.png" width="280" height="160">
-		    </a>
-		    </th>
-			<td> <strong> Territory <br>FORD TERRITORY<br> 2023 Motor 1.5L Turbo</strong></td>
-	    </tr>
 
-	    <tr align="center">
-		    <th>
-		    <a href="carros.html">
-		    <img alt="ERROR" src="https://mlqt0se4pk9p.i.optimole.com/q:85/https://www.autodata.com.br/wordpress/wp-content/uploads//2022/12/HB20-Copa-do-Mundo-FIFA-Qatar-2022-51.png" widht="100" height="150">
-		   </a>
-			</th>
-			<td> <strong> HB20 <br>HYUNDAI HB20<br> Motor 1.0L</strong></td>
-		</tr>
-		<tr align="center">
-		<th>
-		   <a href="carros.html">
-		   <img alt="ERROR" src="Imagens/City.png" widht="100" height="150">
-		</th>
-		<td> <strong> Honda City <br>New City Sedan EX<br>
-		 Motor 1.5L</strong></td>
-	    </tr>
-	    <tr align="center">
-		<th>
-		   <a href="carros.html">
-		   <img alt="ERROR" src="Imagens/Corolla.png">
-		</th>
-	    </a>
-		<td> <strong> Corolla <br>Toyota Corolla 2023<br> Motor 2.0L </strong></td>
-	    </tr>
-	</table>
+    <meta
+        name="description"
+        content="Meu Carango — catálogo de carros, fabricantes e agências."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Meu Carango | Venda de Carros</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container header-inner">
+            <a class="logo" href="index.html">
+                Meu <span>Carango</span>
+            </a>
+
+            <nav class="nav">
+                <a class="active" href="index.html">Home</a>
+                <a href="carros.html">Carros</a>
+                <a href="fabricantes.html">Fabricantes</a>
+                <a href="agencias.html">Agências</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+
+        <!-- Hero -->
+        <section class="hero">
+            <h1>Encontre seu próximo carro.</h1>
+
+            <p>
+                Um catálogo simples e organizado para comparar modelos,
+                consultar especificações e conhecer fabricantes e agências.
+            </p>
+
+            <a class="btn" href="carros.html">Ver carros</a>
+        </section>
+
+        <!-- Título da seção -->
+        <div class="section-title">
+            <div>
+                <h2>Modelos em destaque</h2>
+                <p>Conheça os veículos disponíveis no catálogo.</p>
+            </div>
+        </div>
+
+        <!-- Cards dos veículos -->
+        <section class="grid">
+
+            <!-- Renault Duster -->
+            <a class="card car-card car-link" href="carros.html#duster">
+                <div class="car-image">
+                    <img src="Imagens/Duster.png" alt="Renault Duster">
+                </div>
+
+                <h3>Duster</h3>
+
+                <p class="subtitle">
+                    Renault Duster · Motor 1.6L
+                </p>
+
+                <div class="specs">
+                    <div class="spec">
+                        <small>Motor</small>
+                        <strong>1.6</strong>
+                    </div>
+
+                    <div class="spec">
+                        <small>Tração</small>
+                        <strong>Dianteira</strong>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Ford Territory -->
+            <a class="card car-card car-link" href="carros.html#territory">
+                <div class="car-image">
+                    <img src="Imagens/Territory.png" alt="Ford Territory">
+                </div>
+
+                <h3>Territory</h3>
+
+                <p class="subtitle">
+                    Ford Territory · 2023 · 1.5L Turbo
+                </p>
+
+                <div class="specs">
+                    <div class="spec">
+                        <small>Motor</small>
+                        <strong>1.5</strong>
+                    </div>
+
+                    <div class="spec">
+                        <small>Câmbio</small>
+                        <strong>CVT</strong>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Hyundai HB20 -->
+            <a class="card car-card car-link" href="carros.html#hb20">
+                <div class="car-image">
+                    <img src="Imagens/HB20.png" alt="Hyundai HB20">
+                </div>
+
+                <h3>HB20</h3>
+
+                <p class="subtitle">
+                    Hyundai HB20 · Motor 1.0L
+                </p>
+
+                <div class="specs">
+                    <div class="spec">
+                        <small>Motor</small>
+                        <strong>1.0</strong>
+                    </div>
+
+                    <div class="spec">
+                        <small>Tração</small>
+                        <strong>Dianteira</strong>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Honda City -->
+            <a class="card car-card car-link" href="carros.html#city">
+                <div class="car-image">
+                    <img src="Imagens/City.png" alt="Honda City">
+                </div>
+
+                <h3>Honda City</h3>
+
+                <p class="subtitle">
+                    New City Sedan EX · Motor 1.5L
+                </p>
+
+                <div class="specs">
+                    <div class="spec">
+                        <small>Motor</small>
+                        <strong>1.5</strong>
+                    </div>
+
+                    <div class="spec">
+                        <small>Tração</small>
+                        <strong>Dianteira</strong>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Toyota Corolla -->
+            <a class="card car-card car-link" href="carros.html#corolla">
+                <div class="car-image">
+                    <img src="Imagens/Corolla.png" alt="Toyota Corolla">
+                </div>
+
+                <h3>Corolla</h3>
+
+                <p class="subtitle">
+                    Toyota Corolla 2023 · Motor 2.0L
+                </p>
+
+                <div class="specs">
+                    <div class="spec">
+                        <small>Motor</small>
+                        <strong>2.0</strong>
+                    </div>
+
+                    <div class="spec">
+                        <small>Câmbio</small>
+                        <strong>CVT</strong>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Chevrolet Onix -->
+            <a class="card car-card car-link" href="carros.html#onix">
+                <div class="car-image">
+                    <img src="Imagens/Onix.png" alt="Chevrolet Onix">
+                </div>
+
+                <h3>Onix</h3>
+
+                <p class="subtitle">
+                    Chevrolet Onix · Motor 1.0L Turbo
+                </p>
+
+                <div class="specs">
+                    <div class="spec">
+                        <small>Motor</small>
+                        <strong>1.0 Turbo</strong>
+                    </div>
+
+                    <div class="spec">
+                        <small>Câmbio</small>
+                        <strong>Automático</strong>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Volkswagen T-Cross -->
+            <a class="card car-card car-link" href="carros.html#tcross">
+                <div class="car-image">
+                    <img src="Imagens/Tcross.png" alt="Volkswagen T-Cross">
+                </div>
+
+                <h3>T-Cross</h3>
+
+                <p class="subtitle">
+                    Volkswagen T-Cross · Motor 1.0L Turbo
+                </p>
+
+                <div class="specs">
+                    <div class="spec">
+                        <small>Motor</small>
+                        <strong>1.0 Turbo</strong>
+                    </div>
+
+                    <div class="spec">
+                        <small>Tração</small>
+                        <strong>Dianteira</strong>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Nissan Kicks -->
+            <a class="card car-card car-link" href="carros.html#kicks">
+                <div class="car-image">
+                    <img src="Imagens/Kicks.png" alt="Nissan Kicks">
+                </div>
+
+                <h3>Kicks</h3>
+
+                <p class="subtitle">
+                    Nissan Kicks · Motor 1.6L
+                </p>
+
+                <div class="specs">
+                    <div class="spec">
+                        <small>Motor</small>
+                        <strong>1.6</strong>
+                    </div>
+
+                    <div class="spec">
+                        <small>Câmbio</small>
+                        <strong>CVT</strong>
+                    </div>
+                </div>
+            </a>
+
+        </section>
+
+        <!-- Botão final -->
+        <div style="text-align: center; margin-top: 30px;">
+            <a class="btn" href="carros.html">
+                Ver especificações completas
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-brand">Meu Carango</div>
+            <div>Catálogo de veículos · Projeto atualizado</div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Adiciona um pequeno destaque ao card antes de abrir a ficha técnica.
+        document.querySelectorAll('.car-link').forEach(function (card) {
+            card.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                var url = card.href;
+
+                card.classList.add('is-opening');
+
+                setTimeout(function () {
+                    window.location.href = url;
+                }, 180);
+            });
+        });
+    </script>
+
 </body>
 </html>
